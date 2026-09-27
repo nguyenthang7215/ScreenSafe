@@ -330,6 +330,4 @@ Các fallback được report đề xuất nhưng chưa tự động triển kha
 - Giao diện: `app/src/main/res/layout/activity_main.xml`
 - Manifest: `app/src/main/AndroidManifest.xml`
 - Báo cáo kỹ thuật: `SCREENSAFE_PROTOTYPE_REPORT.md`
-- Ảnh kết quả: `screensafe-final.png`
 - APK debug: `app/build/outputs/apk/debug/app-debug.apk`
-

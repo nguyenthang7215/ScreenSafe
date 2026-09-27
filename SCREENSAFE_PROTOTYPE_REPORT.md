@@ -39,7 +39,6 @@ ScreenSafe/
 │       └── res/
 │           ├── layout/activity_main.xml
 │           └── values/strings.xml
-├── screensafe-result.png
 └── SCRENSAFE_PROTOTYPE_REPORT.md
 ```
 
@@ -49,7 +48,6 @@ Vai trò của các file:
 - `activity_main.xml`: giao diện gồm URL input, nút Mở, trạng thái và WebView.
 - `AndroidManifest.xml`: khai báo quyền Internet và cấu hình cleartext phục vụ prototype.
 - `strings.xml`: nội dung giao diện.
-- `screensafe-result.png`: ảnh chụp kết quả thực tế trên emulator.
 
 ## 4. Kiến trúc và luồng hoạt động
 
@@ -336,12 +334,6 @@ Report DOM đầy đủ được lưu trên thiết bị tại:
 ```
 
 Kết quả probe audio được lưu tại `latest_audio_probe.json`. Khi video đang pause, report trả `rms = 0`, `peak = 0` và lý do yêu cầu phát video trước. Khi media đang phát và Web Audio được phép, `nonSilent = true` chứng minh ứng dụng đọc được tín hiệu âm thanh. Raw PCM và DRM bypass không được triển khai.
-
-Ảnh chụp kết quả nằm tại:
-
-```text
-screensafe-result.png
-```
 
 ## 8. Mẫu Logcat
 
