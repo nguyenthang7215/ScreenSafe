@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/urlInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/url_hint"
+            android:imeOptions="actionGo"
+            android:inputType="textUri"
+            android:maxLines="1"
+            android:text="https://example.com" />
+
+        <Button
+            android:id="@+id/openButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/inspectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/inspect_again" />
+
+    <Button
+        android:id="@+id/audioProbeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/probe_audio" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="6dp"
+        android:text="@string/ready"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="#EEEEEE"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:text="@string/no_result"
+        android:textIsSelectable="true"
+        android:textSize="12sp" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

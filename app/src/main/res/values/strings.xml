@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ScreenSafe</string>
+    <string name="url_hint">https://example.com</string>
+    <string name="open">Mở</string>
+    <string name="inspect_again">Quét lại và lưu JSON</string>
+    <string name="probe_audio">Đo audio (phát video trước)</string>
+    <string name="no_result">Chưa có kết quả.</string>
+    <string name="ready">Nhập URL rồi nhấn Mở. Xem chi tiết với tag ScreenSafe trong Logcat.</string>
+    <string name="loading">Đang tải: %1$s</string>
+    <string name="inspecting">Đang đọc DOM: %1$s</string>
+    <string name="inspect_result">TEXT: %1$d | IMAGE: %2$d | VIDEO: %3$d | AUDIO: %4$d | LIMIT: %5$d</string>
+    <string name="inspect_failed">Không đọc được kết quả DOM. Xem Logcat tag ScreenSafe.</string>
+</resources>
